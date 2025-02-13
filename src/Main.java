@@ -80,6 +80,9 @@ public class Main {
         sumCost = getCostSize(s);
         sumCost = getCostFragile(isFragile);
         sumCost = getCostRate(r);
+        if (sumCost < 400) {
+            sumCost = 400;
+        }
         return sumCost;
     }
 
